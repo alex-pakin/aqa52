@@ -1,4 +1,4 @@
-package ru.netology.Test;
+package ru.netology.test;
 
 import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.BeforeEach;
@@ -66,4 +66,5 @@ public class LoginFormTest {
         $x("//*[@data-test-id='error-notification']").shouldHave(Condition.text("Ошибка!"
                 + " Неверно указан логин или пароль")).shouldBe(Condition.visible);
     }
+
 }
